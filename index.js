@@ -25,3 +25,9 @@ db.connect((err) => {
         console.log("database conected");
     }
 })
+
+app.get('/api', (req, res) => {
+    // console.log(req.query);
+
+    res.send("API working")
+})
